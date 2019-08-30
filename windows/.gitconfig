@@ -1,0 +1,36 @@
+[user]
+        name = Grzegorz Dobrowolski
+        email = dobrowolski.grzegorz@gmail.com
+[core]
+        symlinks = true
+        autocrlf = true
+        repositoryFormatVersion = 0
+        fileMode = false
+        bare = false
+        logAllRefUpdates = true
+        ignorecase = true
+        editor = vim
+[color]
+        diff = auto
+        status = auto
+        branch = auto
+        interactive = true
+[help]
+        format = man
+[rebase]
+        autoSquash = true
+[diff]
+        tool = vimdiff
+[difftool]
+        prompt = false
+[merge]
+        tool = vimdiff
+        conflictstyle = diff3
+[mergetool]
+        prompt = false
+[filter "lfs"]
+        clean = git-lfs clean -- %f
+        smudge = git-lfs smudge --skip -- %f
+        process = git-lfs filter-process --skip
+        required = true
+        
