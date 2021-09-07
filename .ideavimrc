@@ -1,0 +1,51 @@
+set ideajoin
+set idearefactormode=keep
+set number relativenumber
+set magic
+
+let mapleader=";"
+
+set clipboard=unnamed
+
+"set ts=2
+"set sw=2
+set expandtab
+
+set hlsearch
+set ignorecase
+set smartcase
+set incsearch
+
+set scrolloff=3
+
+" Don't use Ex mode, use for formatting.
+map Q gq
+
+" Smart way to move between windows
+map <C-j> <C-W>j
+map <C-k> <C-W>k
+map <C-h> <C-W>h
+map <C-l> <C-W>l
+
+" Convinient way to do basic cursor movement in insert mode
+imap <C-h> <Left>
+imap <C-j> <Down>
+imap <C-k> <Up>
+imap <C-l> <Right>
+
+imap <silent> <C-w> <C-o>e<C-l>
+imap <C-b> <S-left>
+
+imap <C-d> <Del>
+imap <C-q> <Action>(QuickJavaDoc)
+
+" Disable highlight when <leader><cr> is pressed
+map <silent> <leader><cr> :noh<cr>
+
+map <silent> <leader>q <Action>(QuickJavaDoc)
+map <silent> <leader>n <Action>(GotoClass)
+map <silent> <leader>i <Action>(QuickImplementations)
+map <silent> <leader>e <Action>(RecentFiles)
+map <silent> <leader>p <Action>(ParameterInfo)
+map <silent> <leader>o <Action>(OverrideMethods)
+map <silent> <leader>b <Action>(GotoDeclaration)
